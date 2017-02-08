@@ -210,6 +210,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\BuddyFolder\CohortBuddy.cs" />
+    <Compile Include="Models\BuddyFolder\HelpTicketBuddy.cs" />
     <Compile Include="Models\Cohort.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -217,6 +219,8 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\BuddyFolder\InstructorBuddy.cs" />
+    <Compile Include="Models\BuddyFolder\LocationBuddy.cs" />
     <Compile Include="Models\Instructor.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -239,6 +243,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\BuddyFolder\StatusBuddy.cs" />
+    <Compile Include="Models\BuddyFolder\StudentBuddy.cs" />
     <Compile Include="Models\Status.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>

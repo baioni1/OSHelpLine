@@ -16,11 +16,11 @@
     <Property Name="StudentId" Type="Int32" Nullable="false" />
     <Property Name="InstructorId" Type="Int32" />
     <Property Name="LocationId" Type="Int32" />
-    <Property Name="StatusId" Type="Int32" Nullable="false" />
+    <Property Name="StatusId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="None" DefaultValue="1" />
     <Property Name="TimeIn" Type="DateTime" Nullable="false" Precision="3" annotation:StoreGeneratedPattern="Computed" />
     <Property Name="Topic" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Description" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
-    <Property Name="TimeDone" Type="DateTime" Nullable="false" Precision="3" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="TimeDone" Type="DateTime" Precision="3" annotation:StoreGeneratedPattern="None" />
     <NavigationProperty Name="Instructor" Relationship="Self.FK_HelpTicket_Instructor" FromRole="HelpTicket" ToRole="Instructor" />
     <NavigationProperty Name="Location" Relationship="Self.FK_HelpTicket_Location" FromRole="HelpTicket" ToRole="Location" />
     <NavigationProperty Name="Status" Relationship="Self.FK_HelpTicket_Status" FromRole="HelpTicket" ToRole="Status" />

@@ -19,7 +19,7 @@
     <Property Name="TimeIn" Type="datetime" Nullable="false" StoreGeneratedPattern="Computed" />
     <Property Name="Topic" Type="nvarchar" MaxLength="200" Nullable="false" />
     <Property Name="Description" Type="nvarchar" MaxLength="2000" />
-    <Property Name="TimeDone" Type="datetime" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="TimeDone" Type="datetime" />
   </EntityType>
   <EntityType Name="Instructor">
     <Key>

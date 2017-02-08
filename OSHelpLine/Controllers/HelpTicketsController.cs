@@ -51,7 +51,7 @@ namespace OSHelpLine.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "HelpTicketId,StudentId,InstructorId,LocationId,StatusId,TimeIn,Topic,Description,TimeDone")] HelpTicket helpTicket)
+        public ActionResult Create([Bind(Include = "HelpTicketId,StudentId,InstructorId,LocationId,TimeIn,Topic,Description,TimeDone")] HelpTicket helpTicket)
         {
             if (ModelState.IsValid)
             {
@@ -62,7 +62,7 @@ namespace OSHelpLine.Controllers
 
             ViewBag.InstructorId = new SelectList(db.Instructors, "InstructorId", "FullName", helpTicket.InstructorId);
             ViewBag.LocationId = new SelectList(db.Locations, "LocationId", "LocationName", helpTicket.LocationId);
-            ViewBag.StatusId = new SelectList(db.Status, "StatusId", "StatusName", helpTicket.StatusId);
+            
             ViewBag.StudentId = new SelectList(db.Students, "StudentId", "FullName", helpTicket.StudentId);
             return View(helpTicket);
         }

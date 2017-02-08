@@ -14,6 +14,12 @@ namespace OSHelpLine.Models
     
     public partial class HelpTicket
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public HelpTicket()
+        {
+            this.StatusId = 1;
+        }
+    
         public int HelpTicketId { get; set; }
         public int StudentId { get; set; }
         public Nullable<int> InstructorId { get; set; }
@@ -22,7 +28,7 @@ namespace OSHelpLine.Models
         public System.DateTime TimeIn { get; set; }
         public string Topic { get; set; }
         public string Description { get; set; }
-        public System.DateTime TimeDone { get; set; }
+        public Nullable<System.DateTime> TimeDone { get; set; }
     
         public virtual Instructor Instructor { get; set; }
         public virtual Location Location { get; set; }
